@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+<div class="container"> <!--holds input and output divs-->
+
+  <div class='user-input'> <!--holds inputs of bill, tip and people-->
+
+  <div class="bill-input"> <!--holds bill input-->
+  <label for="bill">Bill</label>
+  <input type="text" name ="bill" id="bill" onfocus="this.value=''">
+  </div><!--holds bill input-->
+
+  <label for="tip" id="tip-label">Select Tip %</label>
+  <div id="tip-input"> <!--holds tip input-->
+
+  
+  <input type="button" class="inactive-btn" id="five" value="5%">  
+  <input type="button" class="inactive-btn" id="ten" value="10%"> 
+  <input type="button" class="inactive-btn" id="fifteen" value="15%""> 
+  <input type="button" class="inactive-btn" id="twentyfive" value="25%""> 
+  <input type="button" class="inactive-btn" id="fifty" value="50%""> 
+  <input type="text" id="custom" value = "Custom"> 
+  </div><!--holds tip input-->
+
+  <div class="people-input"> <!--holds people input-->
+    <label for="people" id="people-label">Number of People</label>
+    <p id="people-hint" class="hidden">
+      can't be 0</p>
+  <input type="number" id="people"  onfocus="this.value=''">
+  
+  </div> <!--holds people input-->
+
+  </div> <!--holds inputs of bill, tip and people-->
+
+  <div class="output"> <!--holds outputs of tip, total and reset button-->
+
+  <div class="tip-output"> <!--holds tip output-->
+    <h4 id="tip-amount">Tip Amount</h4>
+     <p>/ person</p> 
+    </div> <!--holds tip output-->
+    <div class="tipPerP"><h1 id="tip-per-person">$0.00</h1></div>
+    
+  <div class="total-output"> <!--holds total output-->
+  <h4 id="total-amount">Total</h4>
+   <p>/ person</p> 
+  </div> <!--holds total output-->
+  <div class="totalPerP"><h1 id="total-per-person">$0.00</h1></div>
+    
+  <button id="reset">RESET</button>
+  
+  </div><!--holds outputs of tip, total and reset button-->
+
+</div><!--holds input and output divs-->
+
+<div class="attribution"> <!--holds attribute-->
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://github.com/melissafdavis">Melissa Flores Davis</a>.
+</div><!--holds attribute-->
+
+<script src="form.js"></script>
+</body>
+</html>

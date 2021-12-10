@@ -1,0 +1,275 @@
+/*for mobile phones*/
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Space Mono', monospace;}
+
+.user-input{
+    margin: 1em 1em;
+}
+
+.bill-input,.people-input {
+    margin: 1.5em 0em;
+}
+
+#bill{
+    background-image:url('images/icon-dollar.svg');
+    background-repeat:no-repeat;
+    background-position:left;  padding-left:15px;
+}
+
+label{
+    color: #5E7A7D;
+}
+
+input{
+    color: #00474B;
+    font-size: 24px;
+    font-family:'Space Mono', monospace; 
+    text-align: center;
+    background-color: #F3F9FA;
+    border: none;
+    text-align: right;
+}
+
+#tip-input{
+    margin: 1.5em 0em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}  
+
+.inactive-btn{
+    background-color: #00474B;
+    color: #FFFFFF;
+}
+
+.active-btn{
+    background-color: #26C2AE;
+    color: #00474B;
+}
+
+input[type=button]{
+    width: 45%;
+    border: none;
+    margin: .125em 0em;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-family:'Space Mono', monospace; 
+}
+
+#custom{
+    width: 45%;
+    margin: .125em 0em;
+    border-radius: 2px;
+    border: none;
+    background-color: #F3F9FA;
+    color: #5E7A7D;
+    text-align:center;
+}
+
+.people-input{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#people{
+    background-image:url('images/icon-person.svg');
+    background-repeat:no-repeat;
+   background-position:left;  padding-left:15px;
+}
+
+#people-label{
+    width:50%;
+    padding-top:2em;
+    padding-bottom:0em;
+    margin-bottom: 0em;
+    
+}
+
+#people-hint{
+    text-align: right;
+    color: red;
+    width: 40%;
+    padding: 3em .5em 0em 0em;
+   
+}
+
+.hidden{
+    visibility:hidden;
+}
+
+.output{
+    background-color: #00474B;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#tip-per-person, #total-per-person{
+    color: #26C2AE;
+}
+
+.tip-output, .total-output {
+    width: 50%;
+}
+
+#tip-amount, #total-amount{
+    color: #FFFFFF;
+}
+
+h4#tip-amount, h4#total-amount {
+    margin: 1.75em 0em -.5em;
+}
+
+p {
+    color: #7F9D9F;
+    font-size:10px;
+}
+
+#reset{
+    background-color: #26C2AE;
+    color: #00474B;
+    font-family:'Space Mono', monospace; 
+    font-size:16px;
+    font-weight: 900;
+    width: 100%;
+    padding: .75em;
+    border-radius: 8px;
+}
+
+.attribution{
+    margin:2em;
+    color: #00474B;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a{
+    color:#26C2AE;
+}
+
+
+@media only screen and (min-width: 768px) {
+ /* For desktop: */
+
+.container{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top:4em;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 4em;
+}
+
+label{
+    width: 100%;
+    font-size:24px;
+    margin-top:1em;
+}
+
+ .user-input{
+    width: 40%;
+  
+    
+   
+    
+  }
+
+  .bill-input{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 0;
+      
+  }
+
+  #bill{
+      width:100%;
+      font-size:36px;
+  }
+
+  #tip-label{
+      margin-top:1em;
+  }
+
+  input[type=button]{
+    width: 30%;
+    font-size:30px;
+   
+}
+
+
+
+#custom{
+    width: 30%;
+    font-size:2.5vw;
+}
+
+ 
+
+#people{
+    width:100%;
+    font-size:36px;
+}
+
+#people-label{
+ width:55%;
+ font-size:1.6vw;
+ padding-top: 1em;
+ padding-bottom: 0em;
+}
+
+#people-hint{
+    text-align: right;
+    color: red;
+    width: 40%;
+}
+
+
+
+  .output {
+    width: 50%;
+
+  }
+
+  .tip-output{
+      padding-top:2em;
+  }
+
+  #tip-amount, #total-amount {
+      font-size: 25px;}
+
+p{
+    font-size:16px;
+}
+
+#tip-per-person, #total-per-person{
+    font-size:40px;
+    margin-top:1.5em;
+
+}
+
+    #tipPerP, #totalPerP {
+        margin-top: 1em;
+    }
+
+
+  #reset{
+    padding: revert;
+    font-size:24px;
+    margin-top: 1em;
+}
+
+
+
+}
